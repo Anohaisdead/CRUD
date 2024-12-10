@@ -11,7 +11,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-@Data
 @NoArgsConstructor(force = true)
 @Transactional
 public class UserServiceImpl implements UserService {

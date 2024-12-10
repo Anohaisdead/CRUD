@@ -42,7 +42,7 @@ public class UserController {
         return "user_form";
     }
 
-    @PostMapping("/update")
+    @PatchMapping("/update")
     public String updateUser(@ModelAttribute User user) {
         userService.saveUser(user);
         return "redirect:/users";
